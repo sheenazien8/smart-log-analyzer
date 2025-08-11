@@ -2,6 +2,7 @@
     "name": "sheenazien8/smart-log-analyzer",
     "description": "AI-powered Laravel package for analyzing application logs, detecting patterns, and providing actionable insights",
     "type": "library",
+    "version": "1.0.0",
     "license": "MIT",
     "keywords": [
         "laravel",
@@ -20,13 +21,13 @@
     ],
     "require": {
         "php": "^8.1",
-        "illuminate/support": "^9.0|^10.0|^11.0",
-        "illuminate/database": "^9.0|^10.0|^11.0",
-        "illuminate/queue": "^9.0|^10.0|^11.0",
-        "illuminate/cache": "^9.0|^10.0|^11.0",
-        "illuminate/mail": "^9.0|^10.0|^11.0",
-        "illuminate/console": "^9.0|^10.0|^11.0",
-        "illuminate/filesystem": "^9.0|^10.0|^11.0"
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/database": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/queue": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/cache": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/mail": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/console": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/filesystem": "^9.0|^10.0|^11.0|^12.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5|^10.0",
