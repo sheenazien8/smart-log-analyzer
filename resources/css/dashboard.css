@@ -1,0 +1,218 @@
+/* Smart Log Analyzer Dashboard Styles - Tailwind Compatible */
+
+/* Custom color variables for consistency */
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #3730a3;
+    --danger: #dc2626;
+    --warning: #f59e0b;
+    --success: #10b981;
+    --info: #06b6d4;
+    --secondary: #6b7280;
+}
+
+/* Smooth transitions for interactive elements */
+.transition-colors {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* Chart containers */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner 0.75s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Status indicators */
+.status-indicator {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.status-indicator.active {
+    background-color: #10b981;
+}
+
+.status-indicator.inactive {
+    background-color: #6b7280;
+}
+
+.status-indicator.error {
+    background-color: #dc2626;
+}
+
+/* Trend indicators */
+.trend-up {
+    color: #dc2626;
+}
+
+.trend-down {
+    color: #10b981;
+}
+
+.trend-stable {
+    color: #6b7280;
+}
+
+/* Custom scrollbar for webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+    .text-responsive-lg {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+    
+    .text-responsive-xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+/* Table enhancements */
+.table-fixed {
+    table-layout: fixed;
+}
+
+.table-auto {
+    table-layout: auto;
+}
+
+/* Log level specific styles */
+.log-entry[data-level="emergency"],
+.log-entry[data-level="alert"],
+.log-entry[data-level="critical"],
+.log-entry[data-level="error"] {
+    border-left: 3px solid #dc2626;
+}
+
+.log-entry[data-level="warning"] {
+    border-left: 3px solid #f59e0b;
+}
+
+.log-entry[data-level="info"] {
+    border-left: 3px solid #06b6d4;
+}
+
+.log-entry[data-level="debug"] {
+    border-left: 3px solid #6b7280;
+}
+
+/* Code block styling */
+pre code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-break {
+        page-break-after: always;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .hover\:bg-gray-50:hover {
+        background-color: #e5e7eb;
+    }
+    
+    .border-gray-200 {
+        border-color: #6b7280;
+    }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles can be added here if needed */
+}
+
+/* Utility classes for specific dashboard needs */
+.truncate-3-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animation for loading states */
+.pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom focus styles for accessibility */
+.focus-ring:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #4f46e5;
+}
+
+/* Smooth height transitions */
+.transition-height {
+    transition: height 0.3s ease-in-out;
+}
+
+/* Custom grid for dashboard cards */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
