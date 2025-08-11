@@ -23,7 +23,7 @@ Add to `composer.json` in your test Laravel app:
         }
     ],
     "require": {
-        "smartloganalyzer/smart-log-analyzer": "@dev"
+        "sheenazien8/smart-log-analyzer": "@dev"
     }
 }
 ```
@@ -35,7 +35,7 @@ Add to `composer.json` in your test Laravel app:
 composer install
 
 # Install the package
-composer require smartloganalyzer/smart-log-analyzer:@dev
+composer require sheenazien8/smart-log-analyzer:@dev
 
 # Publish package assets
 php artisan vendor:publish --provider="SmartLogAnalyzer\SmartLogAnalyzerServiceProvider"
@@ -185,7 +185,7 @@ chmod -R 775 bootstrap/cache/
 
 ```bash
 # Install package in development mode
-composer require smartloganalyzer/smart-log-analyzer:@dev
+composer require sheenazien8/smart-log-analyzer:@dev
 
 # Reinstall after changes
 php artisan smart-log:install --force
