@@ -1,8 +1,8 @@
 # Smart Log Analyzer
 
-A comprehensive Laravel package that uses AI/ML techniques to analyze application logs, identify patterns, detect anomalies, and provide actionable insights through a web dashboard and automated alerts.
-
 <img src="./docs/images/smart-analyze.png" alt="Smart Log Analyzer Logo" width="200">
+
+A comprehensive Laravel package that uses AI/ML techniques to analyze application logs, identify patterns, detect anomalies, and provide actionable insights through a web dashboard and automated alerts.
 
 ## Features
 
