@@ -310,6 +310,5 @@ The Smart Log Analyzer package is open-sourced software licensed under the [MIT 
 
 ## Support
 
-- Documentation: [https://docs.smartloganalyzer.com](https://docs.smartloganalyzer.com)
-- Issues: [GitHub Issues](https://github.com/smartloganalyzer/smart-log-analyzer/issues)
-- Discussions: [GitHub Discussions](https://github.com/smartloganalyzer/smart-log-analyzer/discussions)
+- Issues: [GitHub Issues](https://github.com/sheenazien8/smart-log-analyzer/issues)
+- Discussions: [GitHub Discussions](https://github.com/sheenazien8/smart-log-analyzer/discussions)
